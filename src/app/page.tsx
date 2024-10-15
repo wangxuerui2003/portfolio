@@ -1,30 +1,20 @@
-import Navbar from '@/components/Navbar';
-import Image from 'next/image';
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
-	return (
-		<>
-			<header>
-				<Image
-					src="/images/profile-picture.jpg"
-					alt="Profile Picture"
-					width={240}
-					height={240}
-				/>
+  return (
+    <>
+      <Navbar />
 
-				<Navbar />
-			</header>
+      <main>
+        <section id="home"></section>
+        <section id="skills"></section>
+        <section id="achievements"></section>
+        <section id="projects"></section>
+        <section id="testimonials"></section>
+        <section id="contact-me"></section>
+      </main>
 
-			<main>
-				<section id="home"></section>
-				<section id="skills"></section>
-				<section id="achievements"></section>
-				<section id="projects"></section>
-				<section id="testimonials"></section>
-				<section id="contact-me"></section>
-			</main>
-
-			<footer></footer>
-		</>
-	);
+      <footer></footer>
+    </>
+  );
 }
