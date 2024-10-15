@@ -1,12 +1,13 @@
 import Navbar from "@/components/nav/Navbar";
+import Hero from "@/components/sections/Hero";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Navbar />
 
       <main>
-        <section id="home"></section>
+        <Hero />
         <section id="skills"></section>
         <section id="achievements"></section>
         <section id="projects"></section>
