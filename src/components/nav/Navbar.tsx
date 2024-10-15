@@ -1,36 +1,67 @@
+"use client";
+
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import NavLink from "./NavLink";
 import NavLinkMobile from "./NavLinkMobile";
+import React from "react";
 
 export default function Navbar() {
+  const [isSheetOpen, setIsSheetOpen] = React.useState(false);
+
+  const handleNavLinkClick = () => {
+    setIsSheetOpen(false);
+  };
+
   return (
-    <header className="sticky flex h-24 w-full shrink-0 items-center px-24 py-4 shadow-lg">
-      <Sheet>
-        <SheetTrigger asChild>
-          <Button variant="outline" size="icon" className="lg:hidden">
-            <MenuIcon />
-            <span className="sr-only">Toggle navigation menu</span>
-          </Button>
-        </SheetTrigger>
-        <SheetContent side="left">
-          <Link href="#home" className="mr-6 hidden lg:flex" prefetch={false}>
-            <ProfilePicture />
+    <header className="sticky flex h-24 w-full shrink-0 items-center z-10 bg-background px-8 md:px-24 py-4 shadow-lg">
+      <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+        <div className="w-full flex justify-between items-center lg:hidden">
+          <Link
+            href="#hero"
+            className="mr-6 lg:hidden"
+            prefetch={false}
+            onClick={handleNavLinkClick}
+          >
+            <div className="flex items-center">
+              <ProfilePicture />
+              <h2 className="ml-4 text-xl font-bold">Ray Wang</h2>
+            </div>
             <span className="sr-only">Ray Wang</span>
           </Link>
+          <SheetTrigger asChild>
+            <Button variant="outline" size="icon" className="lg:hidden">
+              <MenuIcon />
+              <span className="sr-only">Toggle navigation menu</span>
+            </Button>
+          </SheetTrigger>
+        </div>
+        <SheetContent side="left">
           <div className="grid gap-2 py-6">
-            <NavLinkMobile href="#home">Home</NavLinkMobile>
-            <NavLinkMobile href="#skills">Skills</NavLinkMobile>
-            <NavLinkMobile href="#achievements">Achievements</NavLinkMobile>
-            <NavLinkMobile href="#projects">Projects</NavLinkMobile>
-            <NavLinkMobile href="#testimonials">Testimonials</NavLinkMobile>
-            <NavLinkMobile href="#contact">Contact</NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#hero">
+              About
+            </NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#skills">
+              Skills
+            </NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#achievements">
+              Achievements
+            </NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#projects">
+              Projects
+            </NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#testimonials">
+              Testimonials
+            </NavLinkMobile>
+            <NavLinkMobile onClick={handleNavLinkClick} href="#contact">
+              Contact
+            </NavLinkMobile>
           </div>
         </SheetContent>
       </Sheet>
-      <Link href="#home" className="mr-6 hidden lg:flex" prefetch={false}>
+      <Link href="#hero" className="mr-6 hidden lg:flex" prefetch={false}>
         <div className="flex items-center transition hover:scale-105 ease-linear duration-75">
           <ProfilePicture />
           <h2 className="ml-4 text-xl font-bold">Ray Wang</h2>
