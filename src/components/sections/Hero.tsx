@@ -18,34 +18,41 @@ export default function Hero() {
       <h1 className="font-bold text-3xl md:text-6xl">Hey, I&apos;m Ray Wang</h1>
       <p className="mt-4 text-lg md:text-2xl">
         A{" "}
-        <a
+        <Link
           href="https://42kl.edu.my/"
           target="_blank"
           className="hover:underline text-green-500"
         >
           42 Malaysia
-        </a>{" "}
+        </Link>{" "}
         graduate and a full-stack web developer. I&apos;m passionate about
         building good looking and easy to use web and mobile apps.
       </p>
 
-      <div className="mt-8">
-        <Link
-          href="#skills"
-          className="w-14 h-6 px-8 mx-4 my-2 py-3 text-lg font-semibold bg-primary rounded-md transition-all hover:bg-secondary"
-        >
-          Skills
-        </Link>
-        <Link
-          href="#projects"
-          className="w-14 h-6 px-8 mx-4 my-2 py-3 text-lg font-semibold bg-primary rounded-md transition-all hover:bg-secondary"
-        >
-          Projects
-        </Link>
+      <div className="mt-8 flex justify-center">
+        <QuickLink href="#skills">Skills</QuickLink>
+        <QuickLink href="#projects">Projects</QuickLink>
       </div>
 
       <ScrollDownEffect width={36} height={36} className="mt-8" />
     </section>
+  );
+}
+
+function QuickLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className="w-32 h-12 px-8 flex items-center justify-center mx-4 my-2 py-3 text-lg font-semibold bg-primary rounded-md transition-all hover:bg-secondary"
+    >
+      {children}
+    </Link>
   );
 }
 
