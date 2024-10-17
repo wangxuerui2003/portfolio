@@ -16,7 +16,7 @@ export default function Navbar() {
 	};
 
 	return (
-		<header className="sticky top-0 flex h-24 w-full shrink-0 items-center z-10 bg-background px-8 md:px-24 py-4 shadow-lg">
+		<header className="sticky top-0 flex h-24 w-full shrink-0 items-center z-10 bg-background px-8 md:px-24 py-4 shadow-lg opacity-95">
 			<Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
 				<div className="w-full flex justify-between items-center lg:hidden">
 					<Link
