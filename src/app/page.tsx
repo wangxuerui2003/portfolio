@@ -1,5 +1,6 @@
 import Navbar from "@/components/nav/Navbar";
 import Achievements from "@/components/sections/Achievements";
+import ContactMe from "@/components/sections/ContactMe";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
 import Skills from "@/components/sections/Skills";
@@ -16,7 +17,7 @@ export default function Page() {
 				<Achievements />
 				<Projects />
 				{/* <Testimonials /> */}
-				<section id="contact-me"></section>
+				<ContactMe />
 			</main>
 
 			<footer></footer>
