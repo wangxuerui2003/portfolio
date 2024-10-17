@@ -4,6 +4,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
 }
 
 @layer utilities {
@@ -21,7 +22,7 @@ body {
 		--card-foreground: 112, 83%, 7%;
 		--popover: 105, 80%, 98%;
 		--popover-foreground: 112, 83%, 7%;
-		--primary: 113, 55%, 52%;
+		--primary: 113, 55%, 60%;
 		--primary-foreground: 112, 83%, 93%;
 		--secondary: 115, 55%, 71%;
 		--secondary-foreground: 112, 83%, 7%;
@@ -49,7 +50,7 @@ body {
 		--card-foreground: 112, 83%, 93%;
 		--popover: 105, 80%, 2%;
 		--popover-foreground: 112, 83%, 93%;
-		--primary: 113, 55%, 48%;
+		--primary: 113, 55%, 40%;
 		--primary-foreground: 112, 83%, 7%;
 		--secondary: 115, 55%, 29%;
 		--secondary-foreground: 112, 83%, 93%;
