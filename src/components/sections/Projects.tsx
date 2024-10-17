@@ -56,8 +56,8 @@ export default function Projects() {
 						/>
 						<CarouselCard
 							title="Cub3D"
-							description="A 2.5D game built with pure C and an OpenGL-like graphics library minilibx."
-							imageSrc="/images/ETHKL-pic.jpg"
+							description="A 2.5D game similar to DOOM built with pure C and an OpenGL-like graphics library minilibx. With features like Minimap, side menu, and more."
+							imageSrc="/images/cub3d.gif"
 							imageAlt="Cub3D"
 							link="https://github.com/wangxuerui2003/cub3D/"
 							linkDescription="Checkout Github"
