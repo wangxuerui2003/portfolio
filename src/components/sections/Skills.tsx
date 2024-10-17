@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="w-full h-[80vh] px-6 lg:px-24 bg-background flex flex-col justify-start items-center flex-grow gap-6"
+      className="w-full h-[100vh] px-6 lg:px-24 bg-background flex flex-col justify-start items-center flex-grow gap-6"
     >
       <div className="flex mt-12 lg:mt-24 items-center gap-4">
         <h1 className="font-bold text-4xl lg:text-6xl">Skills</h1>
@@ -86,7 +86,7 @@ function SkillsIcons({
 }) {
   return (
     <div className="flex flex-col items-start justify-between">
-      <h4 className="cursor-default text-lg lg:text-xl">{skillName}</h4>
+      <h4 className="cursor-default text-xl">{skillName}</h4>
       <img
         className="w-auto"
         src={`https://skillicons.dev/icons?i=${iconsString}`}
