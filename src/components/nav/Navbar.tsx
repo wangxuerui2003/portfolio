@@ -52,9 +52,9 @@ export default function Navbar() {
 						<NavLinkMobile onClick={handleNavLinkClick} href="#projects">
 							Projects
 						</NavLinkMobile>
-						<NavLinkMobile onClick={handleNavLinkClick} href="#testimonials">
+						{/* <NavLinkMobile onClick={handleNavLinkClick} href="#testimonials">
 							Testimonials
-						</NavLinkMobile>
+						</NavLinkMobile> */}
 						<NavLinkMobile onClick={handleNavLinkClick} href="#contact">
 							Contact
 						</NavLinkMobile>
@@ -72,7 +72,7 @@ export default function Navbar() {
 				<NavLink href="#skills">Skills</NavLink>
 				<NavLink href="#achievements">Achievements</NavLink>
 				<NavLink href="#projects">Projects</NavLink>
-				<NavLink href="#testimonials">Testimonials</NavLink>
+				{/* <NavLink href="#testimonials">Testimonials</NavLink> */}
 				<NavLink href="#contact">Contact</NavLink>
 			</nav>
 		</header>
