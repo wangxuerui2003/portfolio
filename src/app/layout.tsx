@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const dmSans = DM_Sans({
   weight: ["400", "500", "600", "700"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={dmSans.className}>{children}</body>
+      <body className={dmSans.className}>
+        {children}
+        <Toaster />
+      </body>
     </html>
   );
 }

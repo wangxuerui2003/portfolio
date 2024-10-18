@@ -23,6 +23,7 @@ body {
 		--popover: 105, 80%, 98%;
 		--popover-foreground: 112, 83%, 7%;
 		--primary: 113, 55%, 60%;
+		--primary-hover: 113, 55%, 50%;
 		--primary-foreground: 112, 83%, 93%;
 		--secondary: 115, 55%, 71%;
 		--secondary-foreground: 112, 83%, 7%;
@@ -32,6 +33,8 @@ body {
 		--accent-foreground: 112, 83%, 7%;
 		--destructive: 0, 84.2%, 60.2%;
 		--destructive-foreground: 0, 0%, 98%;
+		--success: 120, 100%, 40%;
+		--success-foreground: 0, 0%, 100%;
 		--border: 0, 0%, 89.8%;
 		--input: 0, 0%, 89.8%;
 		--ring: 0, 0%, 3.9%;
@@ -51,6 +54,7 @@ body {
 		--popover: 105, 80%, 2%;
 		--popover-foreground: 112, 83%, 93%;
 		--primary: 113, 55%, 40%;
+		--primary-hover: 113, 55%, 50%;
 		--primary-foreground: 112, 83%, 7%;
 		--secondary: 115, 55%, 29%;
 		--secondary-foreground: 112, 83%, 93%;
@@ -60,6 +64,8 @@ body {
 		--accent-foreground: 112, 83%, 93%;
 		--destructive: 0, 84.2%, 60.2%;
 		--destructive-foreground: 0, 0%, 98%;
+		--success: 120, 100%, 40%;
+		--success-foreground: 0, 0%, 100%;
 		--border: 0, 0%, 89.8%;
 		--input: 0, 0%, 89.8%;
 		--ring: 0, 0%, 3.9%;
