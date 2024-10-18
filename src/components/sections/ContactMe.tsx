@@ -88,7 +88,7 @@ export default function ContactMe() {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name</FormLabel>
+                  <FormLabel className="text-lg font-bold">Name</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Enter Your Name"
@@ -105,7 +105,7 @@ export default function ContactMe() {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel className="text-lg font-bold">Email</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Enter Your Email"
@@ -122,7 +122,7 @@ export default function ContactMe() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email</FormLabel>
+                  <FormLabel className="text-lg font-bold">Message</FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Enter Your Message"

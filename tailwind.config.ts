@@ -67,9 +67,20 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(10px)" },
         },
+        "bounce-horizontal": {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-10px)" },
+        },
+        vibrate: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(-5deg)" },
+          "75%": { transform: "rotate(5deg)" },
+        },
       },
       animation: {
         "scroll-down": "scroll-down 1.5s ease-in-out infinite",
+        "bounce-horizontal": "bounce-horizontal 2s infinite",
+        vibrate: "vibrate 0.1s linear 3",
       },
     },
   },
