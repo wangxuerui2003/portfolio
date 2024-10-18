@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -47,12 +48,9 @@ function QuickLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link
-      href={href}
-      className="w-32 h-12 px-8 flex items-center justify-center mx-4 my-2 py-3 text-lg font-semibold bg-primary rounded-md transition-all hover:bg-secondary"
-    >
-      {children}
-    </Link>
+    <Button className="w-32 h-12 mx-4 text-lg font-semibold text-black" asChild>
+      <Link href={href}>{children}</Link>
+    </Button>
   );
 }
 
