@@ -2,7 +2,10 @@ import Image from "next/image";
 
 export default function Experiences() {
 	return (
-		<div className="flex flex-col justify-start items-center bg-background2 w-full py-12 lg:py-24 gap-3">
+		<section
+			id="experience"
+			className="flex flex-col justify-start items-center bg-background2 w-full py-12 lg:py-24 gap-3"
+		>
 			<div className="flex items-center gap-4">
 				<h1 className="font-bold text-4xl lg:text-6xl">Experience</h1>
 				<Image
@@ -24,7 +27,7 @@ export default function Experiences() {
 				"
 				/>
 			</div>
-		</div>
+		</section>
 	);
 }
 
