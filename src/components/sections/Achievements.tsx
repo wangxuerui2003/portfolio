@@ -14,9 +14,9 @@ export default function Achievements() {
 	return (
 		<section
 			id="achievements"
-			className="w-full h-[100vh] flex flex-col justify-start mt-12 lg:mt-24 items-center bg-background2"
+			className="w-full flex flex-col justify-start mt-12 lg:mt-24 items-center bg-background2 py-12 lg:py-24"
 		>
-			<div className="flex mt-12 lg:mt-24 items-center gap-4">
+			<div className="flex items-center gap-4">
 				<h1 className="font-bold text-4xl lg:text-6xl">Achievements</h1>
 				<Image
 					src="/icons/checklist.png"
